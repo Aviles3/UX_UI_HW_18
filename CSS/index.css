@@ -53,3 +53,14 @@ body {
     border: solid;
     background-color: aliceblue;
 }
+.workGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: 
+    "pro1 prodesc1 prodesc1"
+    "pro2 prodesc2 prodesc2"
+    "pro3 prodesc3 prodesc3"
+    ;
+}
