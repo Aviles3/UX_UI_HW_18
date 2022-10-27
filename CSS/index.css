@@ -1,12 +1,15 @@
 .inline-block {
     display: inline-block;
     vertical-align: top;
-    background-color: lightgray;
+}
+.navContent {
+    background-color: aliceblue;
 }
 .logo {
-    width: 23%;
-    padding: 1%;
+    /* width: 23%; */
+    /* padding: 1%; */
     text-align: center;
+    height: 80px;
 }
 nav {
     width: 73%;
@@ -15,6 +18,9 @@ nav {
 .headnav {
     width: 50%;
     margin-left: auto; 
+}
+li {
+    margin: 0px 25px;
 }
 .heroImg {
     height: 600px;
@@ -33,34 +39,46 @@ body {
 .flexContainer {
     display: flex;
     justify-content: space-around;
-    padding: 5px;
+    /* padding: 5px; */
     background-color: aliceblue;
     border: solid;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 33%;
+    margin-right: 33%;
+    max-width: 600px;
 }
 .mySkills h1 {
     text-align: center;
     border: solid;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 33%;
+    margin-right: 33%;
+    max-width: 600px;
 }
 .Tools {
     display: flex;
     justify-content: space-around;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 33%;
+    margin-right: 33%;
     border: solid;
     background-color: aliceblue;
+    max-width: 600px;
+}
+.projects {
+    text-align: center;
+    padding-top: 25px;
 }
 .workGrid {
-    margin: 0px 5%;
+    margin: 0 5%;
     display: grid;
-    grid-template-rows: 150px 150px 150px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr;
     grid-area: 
-    "pro1 prodesc1 prodesc1"
-    "pro2 prodesc2 prodesc2"
-    "pro3 prodesc3 prodesc3"
-    ;
+    "pro1 prodesc1"
+    "pro2 prodesc2"
+    "pro3 prodesc3";
+    row-gap: 5%;
+    padding: 0% 0;
+    max-width: 600px;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 33%;
 }
