@@ -1,3 +1,6 @@
+body {
+    background-color: antiquewhite;
+}
 .inline-block {
     display: inline-block;
     vertical-align: top;
@@ -26,15 +29,32 @@ li {
     height: 600px;
     padding: 25px;
 }
-body {
-    background-color: antiquewhite;
-}
 .content {
-    width: 500px;
-    margin: 0 auto;
+    width: auto;
+    margin: auto 15%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "me aboutme"
+    "me aboutme1"
+    "hello aboutme1";
 }
 .me {
     width: 500px;
+    grid-area: me;
+
+}
+.aboutme {
+    grid-area: aboutme;
+
+}
+.hello {
+    grid-area: hello;
+}
+.resume {
+    width: 75px;
+    height: 50px;
 }
 .flexContainer {
     display: flex;
@@ -61,6 +81,9 @@ body {
     border: solid;
     background-color: aliceblue;
     max-width: 600px;
+}
+.Tools h3 {
+    border-right: solid;
 }
 .projects {
     text-align: center;
